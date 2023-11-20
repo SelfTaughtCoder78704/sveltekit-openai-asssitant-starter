@@ -1,5 +1,5 @@
 // src/lib/askQuestion.js
-import { OPENAI_API_KEY } from '$env/static/private'
+import { OPENAI_API_KEY, ASSISTANT_ID } from '$env/static/private'
 import OpenAI from 'openai';
 const openai = new OpenAI(
   { apiKey: OPENAI_API_KEY }
@@ -7,7 +7,7 @@ const openai = new OpenAI(
 
 export async function askQuestion(query) {
   const assistant = await openai.beta.assistants.retrieve(
-    "asst_tj2WtDLbA9wV42zsKrMjT0JM"
+    ASSISTANT_ID
   );
 
   const thread = await openai.beta.threads.create();

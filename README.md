@@ -20,5 +20,24 @@ cd sveltekit-openai-assistant
 npm install
 
 
-create a .env file in the root directory and add the following:
-``` OPENAI_API_KEY=your-api-key
+
+
+
+Configuration
+OpenAI API Key and Assistant ID
+To use the OpenAI API, you need an API key and an Assistant ID:
+
+Obtain an API Key:
+
+Log in to your OpenAI account.
+Navigate to the API section and generate a new API key.
+Create an Assistant:
+
+Go to the OpenAI playground.
+Create a custom assistant as per your requirements.
+Note down the Assistant ID provided by OpenAI.
+Setting up Environment Variables
+Create a .env file in the root of your project and add your OpenAI API key and Assistant ID:
+
+OPENAI_API_KEY=your_openai_api_key
+OPENAI_ASSISTANT_ID=your_assistant_id
